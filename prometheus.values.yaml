@@ -1171,7 +1171,8 @@ serverFiles:
       - job_name: prometheus
         static_configs:
           - targets:
-            - springtomcat:9300
+          - localhost:9090
+          - springtomcat:9300
       # A scrape configuration for running Prometheus on a Kubernetes cluster.
       # This uses separate scrape configs for cluster components (i.e. API server, node)
       # and services to allow each to use different authentication configs.
