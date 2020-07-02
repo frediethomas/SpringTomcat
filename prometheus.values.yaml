@@ -1177,6 +1177,9 @@ serverFiles:
         static_configs:
           - targets:
              - localhost:9090
+      - job_name: springtomcat
+        static_configs:
+          - targets:
              - springtomcat:9300
           
       # A scrape configuration for running Prometheus on a Kubernetes cluster.
