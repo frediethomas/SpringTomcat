@@ -1,7 +1,4 @@
-scrape_configs:
-      - job_name: 'prometheus'
-        static_configs:
-         - targets: ['localhost:9090']
+scrape_configs:      
       - job_name: 'springtomcat'
         static_configs:
          - targets: ['springtomcat:9300']
